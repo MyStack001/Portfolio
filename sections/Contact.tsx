@@ -84,7 +84,7 @@ export default function Contact() {
               </a>
 
               <a
-                href="https://github.com/ShadrachStack"
+                href="https://github.com/obaahshadrach"
                 target="_blank"
                 className="
                   px-6 py-3 rounded-xl
