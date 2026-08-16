@@ -37,6 +37,15 @@ const projects = [
     live: "https://easyship.live/",
   },
 
+{
+    title: "Programmers University",
+    description:
+      "Developed a modern, responsive landing page for a full-stack development bootcamp,showcasing programs, pricing, testimonials, and a seamless application experience with a focus on performance and conversion.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Node.js"],
+    live: "https://theprogrammersuniversity.com/",
+  },
+
+
   {
     title: "DRO Health App",
     description:
@@ -78,8 +87,7 @@ export default function Projects() {
           </h2>
 
           <p className="mt-3 text-slate-600 max-w-2xl leading-relaxed">
-            A curated collection of product-focused builds — from frontend
-            systems to UI/UX case studies and functional platforms.
+            A curated collection of product-focused builds — from UI/UX case studies to frontend systems and functional platforms.
           </p>
         </div>
 
