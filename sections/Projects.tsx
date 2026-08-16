@@ -5,6 +5,15 @@ import ProjectCard from "../components/ProjectCard";
 
 const projects = [
   {
+    title: "Pipsoul Traders University",
+    description:
+      "A trading education platform designed to help learners build a strong foundation in Forex, Crypto, Stocks, and financial markets through structured learning paths.",
+    tech: ["React", "Vite", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    github:
+      "https://github.com/obaahshadrach/pipsoul-traders-university",
+    status: "Work in Progress",
+  },
+  {
     title: "Pipsoul",
     description:
       "A trade journaling and analytics platform for forex traders built with Next.js and Supabase.",
@@ -19,6 +28,7 @@ const projects = [
     tech: ["React", "TypeScript", "Tailwind CSS"],
     live: "https://useoniix.com/",
   },
+
   {
     title: "EasyShip",
     description:
@@ -26,6 +36,7 @@ const projects = [
     tech: ["Next.js", "React", "Tailwind CSS"],
     live: "https://easyship.live/",
   },
+
   {
     title: "DRO Health App",
     description:
@@ -83,6 +94,7 @@ export default function Projects() {
               github={p.github}
               live={p.live}
               behance={p.behance}
+              status={p.status}
             />
           ))}
         </div>

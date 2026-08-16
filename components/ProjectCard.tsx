@@ -10,6 +10,7 @@ type Props = {
   github?: string;
   live?: string;
   behance?: string;
+  status?: string;
 };
 
 const card = {
@@ -24,6 +25,7 @@ export default function ProjectCard({
   github,
   live,
   behance,
+  status,
 }: Props) {
   return (
     <motion.article
@@ -125,6 +127,11 @@ export default function ProjectCard({
               Behance
             </Link>
           )}
+          {status && (
+  <span className="mb-3 inline-flex rounded-full border border-amber-200 bg-amber-50 px-2.5 py-1 text-[11px] font-medium text-amber-700">
+    {status}
+  </span>
+)}
         </div>
       </div>
     </motion.article>
