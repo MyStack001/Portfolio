@@ -41,7 +41,17 @@ export default function Hero() {
               </Button>
             </a>
           </div>
-
+         <a
+  href="/resume/Shadrach_Obaah_Full_Stack_Product_Engineer_CV.pdf"
+  download
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-3 inline-block"
+>
+  <Button variant="ghost">
+    📄 Download CV
+  </Button>
+</a>
         </div>
 
         {/* Profile Image */}
