@@ -35,14 +35,14 @@ export default function ProjectCard({
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
       className="
-        group relative rounded-xl p-6
-        bg-white/70 backdrop-blur-md
-        border border-slate-200/60
-        shadow-sm
-        transition-all duration-300 ease-out
-        hover:-translate-y-2 hover:shadow-xl
-        hover:border-slate-300      
-        "
+  group relative flex h-full flex-col rounded-xl p-6
+  bg-white/70 backdrop-blur-md
+  border border-slate-200/60
+  shadow-sm
+  transition-all duration-300 ease-out
+  hover:-translate-y-2 hover:shadow-xl
+  hover:border-slate-300
+"
     >
       {/* Glow layer */}
       <div
@@ -56,7 +56,7 @@ export default function ProjectCard({
 />
 
       {/* Content */}
-      <div className="relative">
+      <div className="relative flex h-full flex-col">
         <h3 className="text-lg font-semibold text-slate-800 group-hover:text-slate-900 transition">
           {title}
         </h3>
@@ -82,7 +82,7 @@ export default function ProjectCard({
         </div>
 
         {/* Links */}
-        <div className="flex items-center gap-4 mt-5">
+        <div className="mt-auto flex min-h-[44px] items-center gap-4 pt-5">
           {github && (
             <Link
               href={github}
