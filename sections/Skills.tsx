@@ -9,6 +9,7 @@ const skillCategories = [
       "Next.js",
       "TypeScript",
       "JavaScript (ES6+)",
+      "Vite",
       "HTML5",
       "CSS3",
       "Tailwind CSS",
@@ -23,6 +24,8 @@ const skillCategories = [
     skills: [
       "Supabase",
       "PostgreSQL",
+      "Laravel",
+      "Node.js",
       "REST APIs",
       "Authentication & Authorization",
       "Database Design",
