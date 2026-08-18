@@ -12,7 +12,7 @@ const projects = [
     github:
       "https://github.com/obaahshadrach/pipsoul-traders-university",
     status: "Work in Progress",
-    live: "pipsoul-traders-university.vercel.app",
+    live: "https://pipsoul-traders-university.vercel.app",
   },
   {
     title: "Pipsoul",
