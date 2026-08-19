@@ -10,6 +10,7 @@ const skillCategories = [
       "TypeScript",
       "JavaScript (ES6+)",
       "Vite",
+      "Vue.js",
       "HTML5",
       "CSS3",
       "Tailwind CSS",
@@ -26,9 +27,11 @@ const skillCategories = [
       "PostgreSQL",
       "Laravel",
       "Node.js",
+      "Express.js",
       "REST APIs",
       "Authentication & Authorization",
       "Database Design",
+      
     ],
   },
   {
