@@ -19,6 +19,7 @@ const projects = [
     description:
       "A full-stack learning platform designed to help traders build a strong foundation in Forex, Crypto, Stocks, and financial markets through structured learning experiences.",
     tech: ["React", "Vite", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    image: "/images/projects/pipsoul-traders-university.png",
     github:
       "https://github.com/obaahshadrach/pipsoul-traders-university",
     status: "Work in Progress",
