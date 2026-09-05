@@ -9,6 +9,7 @@ const projects = [
     description:
       "A full-stack trading journal and analytics platform built to help forex traders record trades, analyze performance, and develop better trading habits.",
     tech: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS"],
+    image: "/images/projects/pipsoul.png",
     github: "https://github.com/obaahshadrach/pipsoul-dashboard",
     live: "https://pipsoul-dashboard-six.vercel.app",
     featured: true,
@@ -106,6 +107,7 @@ export default function Projects() {
                 live={p.live}
                 behance={p.behance}
                 status={p.status}
+                image={p.image}
                 featured
               />
             ))}

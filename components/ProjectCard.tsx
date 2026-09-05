@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 
 type Props = {
@@ -12,6 +13,7 @@ type Props = {
   behance?: string;
   status?: string;
   featured?: boolean;
+  image?: string;
 };
 
 const card = {
@@ -28,6 +30,7 @@ export default function ProjectCard({
   behance,
   status,
   featured = false,
+  image,
 }: Props) {
   return (
     <motion.article
@@ -60,6 +63,16 @@ export default function ProjectCard({
 
       {/* Content */}
       <div className="relative flex h-full flex-col">
+      {image && (
+  <div className="relative mb-6 aspect-video overflow-hidden rounded-lg border border-slate-200/60 bg-slate-100">
+    <Image
+      src={image}
+      alt={`${title} screenshot`}
+      fill
+      className="object-cover transition duration-500 group-hover:scale-[1.02]"
+    />
+  </div>
+)}
 
         {/* Featured label */}
         {featured && (
