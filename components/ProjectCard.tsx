@@ -64,16 +64,17 @@ export default function ProjectCard({
       {/* Content */}
       <div className="relative flex h-full flex-col">
       {image && (
-  <div className="relative mb-6 aspect-video overflow-hidden rounded-lg border border-slate-200/60 bg-slate-100">
-    <Image
-      src={image}
-      alt={`${title} screenshot`}
-      fill
-      className="object-cover transition duration-500 group-hover:scale-[1.02]"
-    />
+  <div className="relative mb-7 overflow-hidden rounded-xl border border-slate-200/70 bg-slate-100 shadow-sm transition duration-300 group-hover:shadow-md">
+    <div className="relative aspect-video">
+      <Image
+        src={image}
+        alt={`${title} screenshot`}
+        fill
+        className="object-cover transition duration-500 group-hover:scale-[1.02]"
+      />
+    </div>
   </div>
 )}
-
         {/* Featured label */}
         {featured && (
           <span className="mb-4 w-fit rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-sky-700">
