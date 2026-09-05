@@ -12,50 +12,55 @@ export default function Hero() {
         {/* Text Content */}
         <div className="max-w-2xl text-center md:text-left">
 
-          <p className="text-sm text-sky-600 font-medium">
+          <p className="text-sm font-semibold tracking-wide text-sky-600">
             Hi, I'm
           </p>
 
-          <h1 className="mt-3 text-4xl sm:text-5xl font-extrabold text-slate-900">
+          <h1 className="mt-3 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl md:text-6xl">
             Shadrach Obaah
           </h1>
 
-          <p className="mt-2 text-xl text-slate-700">
-            Full Stack Developer
+          <h2 className="mt-3 text-xl font-semibold text-slate-700 sm:text-2xl">
+            Full-Stack Developer
+          </h2>
+
+          <p className="mt-5 max-w-xl leading-7 text-slate-600">
+            I build modern, responsive web applications with clean
+            frontend experiences, reliable backend systems, and scalable
+            technologies that solve real-world problems.
           </p>
 
-          <p className="mt-4 text-slate-600">
-            I transform ideas into complete digital products by building
-            responsive frontend experiences and reliable backend systems
-            that solve real-world problems.
-          </p>
-
-          <div className="mt-6 flex flex-wrap justify-center gap-3 md:justify-start">
+          {/* Primary Actions */}
+          <div className="mt-7 flex flex-wrap justify-center gap-3 md:justify-start">
             <a href="#projects">
-              <Button>View Projects</Button>
+              <Button>
+                View My Work
+              </Button>
             </a>
 
             <a href="#contact">
               <Button variant="ghost">
-                Contact Me
+                Let's Talk
               </Button>
             </a>
           </div>
-         <a
-  href="/resume/Shadrach_Obaah_Full_Stack_Product_Engineer_CV.pdf"
-  download
-  target="_blank"
-  rel="noopener noreferrer"
-  className="mt-3 inline-block"
->
-  <Button variant="ghost">
-    📄 Download CV
-  </Button>
-</a>
+
+          {/* CV */}
+          <a
+            href="/resume/Shadrach_Obaah_Full_Stack_Product_Engineer_CV.pdf"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-block"
+          >
+            <Button variant="ghost">
+              📄 Download CV
+            </Button>
+          </a>
         </div>
 
         {/* Profile Image */}
-        <div className="relative">
+        <div className="relative shrink-0">
 
           {/* Ambient glow */}
           <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-sky-400/30 to-indigo-400/30 blur-3xl" />
