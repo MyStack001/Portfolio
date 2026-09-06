@@ -113,6 +113,72 @@ export default function PipsoulCaseStudy() {
           </div>
         </div>
       </section>
+      {/* Project Overview */}
+      <section className="border-t border-slate-200 bg-slate-50">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <div className="max-w-3xl">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-600">
+              Project Overview
+            </span>
+
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900">
+              From product idea to full-stack application.
+            </h2>
+
+            <p className="mt-5 leading-relaxed text-slate-600">
+              Pipsoul was built as a complete digital product rather than
+              simply a dashboard interface. The application combines trade
+              journaling, performance analytics, notifications, achievements,
+              and account management into one connected experience.
+            </p>
+
+            <p className="mt-4 leading-relaxed text-slate-600">
+              I designed and developed the product end-to-end, working across
+              the interface, application architecture, authentication,
+              database integration, and core trading workflows.
+            </p>
+          </div>
+
+          {/* Role & Responsibilities */}
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+  {
+    title: "Frontend",
+    description:
+      "Built responsive interfaces and interactive experiences using Next.js, React, and Tailwind CSS.",
+  },
+  {
+    title: "Backend",
+    description:
+      "Implemented authentication, database interactions, storage, and application logic with Supabase.",
+  },
+  {
+    title: "Database & Authentication",
+    description:
+      "Designed the data structure and implemented secure user authentication and account-level data access.",
+  },
+  {
+    title: "Product Development",
+    description:
+      "Connected the application end-to-end and iterated on features based on real usage.",
+  },
+].map((item) => (
+              <div
+                key={item.title}
+                className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm"
+              >
+                <h3 className="font-semibold text-slate-900">
+                  {item.title}
+                </h3>
+
+                <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
