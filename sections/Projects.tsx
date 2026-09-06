@@ -38,6 +38,7 @@ const projects = [
     description:
       "A responsive logistics and shipping platform focused on shipment tracking, clear information architecture, and a smooth user experience.",
     tech: ["Next.js", "React", "Tailwind CSS"],
+    image: "/images/projects/easyship.png",
     live: "https://easyship.live/",
   },
   {
@@ -128,6 +129,7 @@ export default function Projects() {
                 live={p.live}
                 behance={p.behance}
                 status={p.status}
+                image={p.image}
               />
             ))}
         </div>
