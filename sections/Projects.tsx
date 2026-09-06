@@ -31,6 +31,7 @@ const projects = [
     description:
       "A modern responsive platform for a full-stack development bootcamp, featuring programs, pricing, testimonials, and an application experience.",
     tech: ["React", "TypeScript", "Tailwind CSS", "Node.js"],
+    image: "/images/projects/programmers-university.png",
     live: "https://theprogrammersuniversity.com/",
   },
   {
@@ -46,6 +47,7 @@ const projects = [
     description:
       "A modern web application focused on responsive frontend development, polished interfaces, and a clean user experience.",
     tech: ["React", "TypeScript", "Tailwind CSS"],
+    image: "/images/projects/useoniix.png",
     live: "https://useoniix.com/",
   },
   {
