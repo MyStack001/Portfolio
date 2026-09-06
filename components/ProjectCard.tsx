@@ -11,6 +11,7 @@ type Props = {
   github?: string;
   live?: string;
   behance?: string;
+  caseStudy?: string;
   status?: string;
   featured?: boolean;
   image?: string;
@@ -28,6 +29,7 @@ export default function ProjectCard({
   github,
   live,
   behance,
+  caseStudy,
   status,
   featured = false,
   image,
@@ -114,6 +116,18 @@ export default function ProjectCard({
 
         {/* Links */}
         <div className="mt-auto flex min-h-[44px] items-center gap-4 pt-6">
+
+          {caseStudy && (
+  <Link
+    href={caseStudy}
+    className="
+      text-sm font-semibold text-slate-800
+      transition hover:text-sky-600
+    "
+  >
+    View Case Study →
+  </Link>
+)}
 
           {github && (
             <Link

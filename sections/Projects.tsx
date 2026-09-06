@@ -12,6 +12,7 @@ const projects = [
     image: "/images/projects/pipsoul.png",
     github: "https://github.com/obaahshadrach/pipsoul-dashboard",
     live: "https://pipsoul-dashboard-six.vercel.app",
+    caseStudy: "/projects/pipsoul",
     featured: true,
   },
   {
@@ -110,6 +111,7 @@ export default function Projects() {
                 github={p.github}
                 live={p.live}
                 behance={p.behance}
+                caseStudy={p.caseStudy}
                 status={p.status}
                 image={p.image}
                 featured
@@ -130,6 +132,7 @@ export default function Projects() {
                 github={p.github}
                 live={p.live}
                 behance={p.behance}
+                caseStudy={p.caseStudy}
                 status={p.status}
                 image={p.image}
               />
