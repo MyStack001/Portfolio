@@ -18,7 +18,7 @@ export default function About() {
         {/* Content */}
         <div className="space-y-5 text-base leading-7 text-slate-600">
           <p>
-            I'm a Full-Stack Developer focused on building modern,
+            I'm a Full-Stack Software Developer focused on building modern,
             responsive, and reliable web applications. I enjoy taking an
             idea from its early stages and turning it into a functional
             product that people can actually use.
