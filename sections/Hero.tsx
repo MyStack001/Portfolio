@@ -47,7 +47,7 @@ export default function Hero() {
 
           {/* CV */}
           <a
-            href="/resume/Shadrach_Obaah_Full_Stack_Product_Engineer_CV.pdf"
+            href="/resume/Shadrach_Obaah_Software_Engineer_CV.pdf"
             download
             target="_blank"
             rel="noopener noreferrer"
