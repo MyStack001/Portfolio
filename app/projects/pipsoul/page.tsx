@@ -681,169 +681,526 @@ export default function PipsoulCaseStudy() {
      </section>
 
       {/* Technical Architecture */}
-      <section className="border-t border-slate-200 bg-slate-50">
+<section className="border-t border-white/10 bg-[#08111F] text-white">
+  <div className="mx-auto max-w-6xl px-6 py-24">
+    {/* Section Intro */}
+    <div className="max-w-3xl">
+      <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#07B6D5]">
+        Technical Architecture
+      </span>
+
+      <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+        The system behind the trading experience.
+      </h2>
+
+      <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-400 sm:text-lg">
+        Pipsoul connects a modern Next.js frontend with Supabase
+        services, structured trading data, and AI-powered workflows
+        to create a complete trading journal and analytics platform.
+      </p>
+    </div>
+
+    {/* Architecture Tree */}
+    <div className="mt-20">
+      <div className="flex flex-col items-center">
+        {/* Root */}
+        <div className="relative rounded-2xl border border-[#07B6D5]/30 bg-white/[0.04] px-8 py-5 text-center shadow-[0_0_40px_rgba(7,182,213,0.08)]">
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#07B6D5]">
+            Full-Stack Platform
+          </p>
+
+          <h3 className="mt-1 text-2xl font-semibold tracking-tight text-white">
+            Pipsoul
+          </h3>
+        </div>
+
+        {/* Root Connector */}
+        <div className="h-12 w-px bg-white/15" />
+
+        {/* Horizontal Branch */}
+        <div className="hidden h-px w-[72%] bg-white/15 lg:block" />
+
+        {/* Main Architecture Branches */}
+        <div className="relative grid w-full gap-12 lg:grid-cols-3 lg:gap-8">
+          {/* Frontend */}
+          <div className="relative flex flex-col items-center text-center">
+            <div className="hidden h-10 w-px bg-white/15 lg:block" />
+
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+              01
+            </p>
+
+            <h3 className="mt-2 text-xl font-semibold text-white">
+              Frontend
+            </h3>
+
+            <div className="mt-6 space-y-3 text-sm text-slate-400">
+              <p>Next.js</p>
+              <p>React</p>
+              <p>TypeScript</p>
+              <p>Tailwind CSS</p>
+              <p>Framer Motion</p>
+              <p>Recharts</p>
+            </div>
+          </div>
+
+          {/* Backend & Data */}
+          <div className="relative flex flex-col items-center text-center">
+            <div className="hidden h-10 w-px bg-white/15 lg:block" />
+
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+              02
+            </p>
+
+            <h3 className="mt-2 text-xl font-semibold text-white">
+              Backend &amp; Data
+            </h3>
+
+            <div className="mt-6 space-y-3 text-sm text-slate-400">
+              <p>Supabase</p>
+              <p>PostgreSQL</p>
+              <p>Supabase Auth</p>
+              <p>Storage</p>
+              <p>Row Level Security</p>
+            </div>
+          </div>
+
+          {/* AI & Automation */}
+          <div className="relative flex flex-col items-center text-center">
+            <div className="hidden h-10 w-px bg-white/15 lg:block" />
+
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+              03
+            </p>
+
+            <h3 className="mt-2 text-xl font-semibold text-white">
+              AI &amp; Automation
+            </h3>
+
+            <div className="mt-6 space-y-3 text-sm text-slate-400">
+              <p>Pipsoul AI</p>
+              <p>OpenAI</p>
+              <p>Journal Analysis</p>
+              <p>AI Feedback</p>
+              <p>Automated Notifications</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Convergence */}
+        <div className="mt-14 hidden h-12 w-px bg-white/15 lg:block" />
+
+        <div className="hidden h-px w-[72%] bg-white/15 lg:block" />
+
+        {/* Core Experience */}
+        <div className="mt-12 w-full">
+          <div className="flex flex-col items-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+              Core Trading Experience
+            </p>
+
+            <div className="mt-8 grid w-full gap-4 sm:grid-cols-3">
+              <div className="border-l border-white/15 pl-5">
+                <p className="font-medium text-white">
+                  Trade Journaling
+                </p>
+
+                <p className="mt-2 text-sm leading-relaxed text-slate-400">
+                  Structured trade records, setups, notes, outcomes,
+                  and contextual data.
+                </p>
+              </div>
+
+              <div className="border-l border-white/15 pl-5">
+                <p className="font-medium text-white">
+                  Performance Analytics
+                </p>
+
+                <p className="mt-2 text-sm leading-relaxed text-slate-400">
+                  Trading statistics and visual analysis built from
+                  recorded performance.
+                </p>
+              </div>
+
+              <div className="border-l border-white/15 pl-5">
+                <p className="font-medium text-white">
+                  AI Insights
+                </p>
+
+                <p className="mt-2 text-sm leading-relaxed text-slate-400">
+                  Contextual feedback that connects journal behavior
+                  with trading performance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Architecture Note */}
+    <div className="mt-20 border-t border-white/10 pt-8">
+      <p className="max-w-3xl text-sm leading-relaxed text-slate-500">
+        The architecture keeps the presentation layer, data services,
+        authentication, and AI workflows connected while maintaining
+        account-level data isolation through Supabase Row Level Security.
+      </p>
+    </div>
+  </div>
+</section>
+      {/* Engineering Challenges & Solutions */}
+      <section className="border-t border-slate-200 bg-white">
         <div className="mx-auto max-w-6xl px-6 py-24">
           {/* Section Intro */}
           <div className="max-w-3xl">
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#07B6D5]">
-              Technical Architecture
+              Engineering Challenges &amp; Solutions
             </span>
 
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#08111F] sm:text-4xl">
-              The system behind the trading experience.
+              Real problems encountered while building Pipsoul.
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
-              Pipsoul connects a modern Next.js frontend with Supabase
-              services, structured trading data, and AI-powered workflows
-              to create a complete trading journal and analytics platform.
+              Building Pipsoul involved solving problems across
+              authentication, database architecture, realtime data,
+              persistence, security, and AI integration.
             </p>
           </div>
 
-          {/* Architecture Tree */}
+          {/* Challenges */}
           <div className="mt-20">
-            {/* Root */}
-            <div className="flex flex-col items-center">
-              <div className="relative rounded-2xl border border-cyan-200 bg-white px-8 py-5 text-center shadow-sm">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#07B6D5]">
-                  Full-Stack Platform
-                </p>
-
-                <h3 className="mt-1 text-2xl font-semibold tracking-tight text-[#08111F]">
-                  Pipsoul
-                </h3>
-              </div>
-
-              {/* Root Connector */}
-              <div className="h-12 w-px bg-slate-300" />
-
-              {/* Horizontal Branch */}
-              <div className="hidden h-px w-[72%] bg-slate-300 lg:block" />
-
-              {/* Main Architecture Branches */}
-              <div className="relative grid w-full gap-12 lg:grid-cols-3 lg:gap-8">
-                {/* Frontend */}
-                <div className="relative flex flex-col items-center text-center">
-                  <div className="hidden h-10 w-px bg-slate-300 lg:block" />
-
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
+            {/* Challenge 01 */}
+            <div className="relative border-t border-slate-200 py-14">
+              <div className="grid gap-10 lg:grid-cols-[0.35fr_1fr]">
+                <div>
+                  <span className="font-mono text-sm text-[#07B6D5]">
                     01
-                  </p>
+                  </span>
 
-                  <h3 className="mt-2 text-xl font-semibold text-[#08111F]">
-                    Frontend
+                  <h3 className="mt-4 max-w-xs text-xl font-semibold tracking-tight text-[#08111F]">
+                    Supabase Profile &amp; Authentication
                   </h3>
-
-                  <div className="mt-6 space-y-3 text-sm text-slate-600">
-                    <p>Next.js</p>
-                    <p>React</p>
-                    <p>TypeScript</p>
-                    <p>Tailwind CSS</p>
-                    <p>Framer Motion</p>
-                    <p>Recharts</p>
-                  </div>
                 </div>
 
-                {/* Backend & Data */}
-                <div className="relative flex flex-col items-center text-center">
-                  <div className="hidden h-10 w-px bg-slate-300 lg:block" />
+                <div className="grid gap-8 sm:grid-cols-3">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">
+                      Challenge
+                    </p>
 
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
-                    02
-                  </p>
-
-                  <h3 className="mt-2 text-xl font-semibold text-[#08111F]">
-                    Backend &amp; Data
-                  </h3>
-
-                  <div className="mt-6 space-y-3 text-sm text-slate-600">
-                    <p>Supabase</p>
-                    <p>PostgreSQL</p>
-                    <p>Supabase Auth</p>
-                    <p>Storage</p>
-                    <p>Row Level Security</p>
+                    <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                      New users could authenticate successfully, but profile
+                      data and dashboard greetings were not always available
+                      when the UI expected them.
+                    </p>
                   </div>
-                </div>
 
-                {/* AI & Automation */}
-                <div className="relative flex flex-col items-center text-center">
-                  <div className="hidden h-10 w-px bg-slate-300 lg:block" />
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">
+                      Solution
+                    </p>
 
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
-                    03
-                  </p>
+                    <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                      Separated authentication state from profile loading
+                      and implemented reliable profile fetching and provider
+                      logic.
+                    </p>
+                  </div>
 
-                  <h3 className="mt-2 text-xl font-semibold text-[#08111F]">
-                    AI &amp; Automation
-                  </h3>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#07B6D5]">
+                      Result
+                    </p>
 
-                  <div className="mt-6 space-y-3 text-sm text-slate-600">
-                    <p>Pipsoul AI</p>
-                    <p>OpenAI</p>
-                    <p>Journal Analysis</p>
-                    <p>AI Feedback</p>
-                    <p>Automated Notifications</p>
+                    <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                      Consistent user identity and profile data across the
+                      authenticated application.
+                    </p>
                   </div>
                 </div>
               </div>
+            </div>
 
-              {/* Convergence */}
-              <div className="mt-14 hidden h-12 w-px bg-slate-300 lg:block" />
+            {/* Challenge 02 */}
+            <div className="relative border-t border-slate-200 py-14">
+              <div className="grid gap-10 lg:grid-cols-[0.35fr_1fr]">
+                <div>
+                  <span className="font-mono text-sm text-[#07B6D5]">
+                    02
+                  </span>
 
-              <div className="hidden h-px w-[72%] bg-slate-300 lg:block" />
+                  <h3 className="mt-4 max-w-xs text-xl font-semibold tracking-tight text-[#08111F]">
+                    Database Trigger &amp; Schema Mismatch
+                  </h3>
+                </div>
 
-              {/* Core Experience */}
-              <div className="mt-12 w-full">
-                <div className="flex flex-col items-center">
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
-                    Core Trading Experience
-                  </p>
+                <div className="grid gap-8 sm:grid-cols-3">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">
+                      Challenge
+                    </p>
 
-                  <div className="mt-8 grid w-full gap-4 sm:grid-cols-3">
-                    <div className="border-l border-slate-300 pl-5">
-                      <p className="font-medium text-[#08111F]">
-                        Trade Journaling
-                      </p>
+                    <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                      The Supabase{" "}
+                      <code className="rounded bg-slate-100 px-1.5 py-0.5 text-xs text-slate-700">
+                        handle_new_user
+                      </code>{" "}
+                      trigger was still trying to insert{" "}
+                      <code className="rounded bg-slate-100 px-1.5 py-0.5 text-xs text-slate-700">
+                        bio
+                      </code>{" "}
+                      after the profile schema had moved to{" "}
+                      <code className="rounded bg-slate-100 px-1.5 py-0.5 text-xs text-slate-700">
+                        strategy
+                      </code>
+                      .
+                    </p>
+                  </div>
 
-                      <p className="mt-2 text-sm leading-relaxed text-slate-500">
-                        Structured trade records, setups, notes, outcomes,
-                        and contextual data.
-                      </p>
-                    </div>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">
+                      Solution
+                    </p>
 
-                    <div className="border-l border-slate-300 pl-5">
-                      <p className="font-medium text-[#08111F]">
-                        Performance Analytics
-                      </p>
+                    <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                      Updated the trigger to match the current profile
+                      schema and verified the signup flow against the
+                      database.
+                    </p>
+                  </div>
 
-                      <p className="mt-2 text-sm leading-relaxed text-slate-500">
-                        Trading statistics and visual analysis built from
-                        recorded performance.
-                      </p>
-                    </div>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#07B6D5]">
+                      Result
+                    </p>
 
-                    <div className="border-l border-slate-300 pl-5">
-                      <p className="font-medium text-[#08111F]">
-                        AI Insights
-                      </p>
+                    <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                      New accounts could be created without the database
+                      trigger failing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                      <p className="mt-2 text-sm leading-relaxed text-slate-500">
-                        Contextual feedback that connects journal behavior
-                        with trading performance.
-                      </p>
-                    </div>
+            {/* Challenge 03 */}
+            <div className="relative border-t border-slate-200 py-14">
+              <div className="grid gap-10 lg:grid-cols-[0.35fr_1fr]">
+                <div>
+                  <span className="font-mono text-sm text-[#07B6D5]">
+                    03
+                  </span>
+
+                  <h3 className="mt-4 max-w-xs text-xl font-semibold tracking-tight text-[#08111F]">
+                    Account-Level Data Isolation
+                  </h3>
+                </div>
+
+                <div className="grid gap-8 sm:grid-cols-3">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">
+                      Challenge
+                    </p>
+
+                    <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                      Trading journals, trades, notifications, and profile
+                      data needed to remain isolated between users.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">
+                      Solution
+                    </p>
+
+                    <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                      Implemented Supabase Row Level Security policies tied
+                      to authenticated user IDs and enforced ownership at
+                      the database layer.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#07B6D5]">
+                      Result
+                    </p>
+
+                    <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                      Each trader accesses only their own application data.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Challenge 04 */}
+            <div className="relative border-t border-slate-200 py-14">
+              <div className="grid gap-10 lg:grid-cols-[0.35fr_1fr]">
+                <div>
+                  <span className="font-mono text-sm text-[#07B6D5]">
+                    04
+                  </span>
+
+                  <h3 className="mt-4 max-w-xs text-xl font-semibold tracking-tight text-[#08111F]">
+                    AI Context &amp; Actionable Insights
+                  </h3>
+                </div>
+
+                <div className="grid gap-8 sm:grid-cols-3">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">
+                      Challenge
+                    </p>
+
+                    <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                      AI feedback needed to be useful to the trader rather
+                      than producing generic trading advice.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">
+                      Solution
+                    </p>
+
+                    <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                      Passed relevant journal and performance context into
+                      the AI workflow so insights could reflect the
+                      trader&apos;s recorded behavior.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#07B6D5]">
+                      Result
+                    </p>
+
+                    <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                      Pipsoul AI became an application feature connected to
+                      actual user data and workflow.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Challenge 05 */}
+            <div className="relative border-t border-slate-200 py-14">
+              <div className="grid gap-10 lg:grid-cols-[0.35fr_1fr]">
+                <div>
+                  <span className="font-mono text-sm text-[#07B6D5]">
+                    05
+                  </span>
+
+                  <h3 className="mt-4 max-w-xs text-xl font-semibold tracking-tight text-[#08111F]">
+                    Supabase Realtime Subscriptions
+                  </h3>
+                </div>
+
+                <div className="grid gap-8 sm:grid-cols-3">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">
+                      Challenge
+                    </p>
+
+                    <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                      Realtime database updates were not consistently
+                      reaching the interface, affecting notification and
+                      live application state.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">
+                      Solution
+                    </p>
+
+                    <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                      Debugged the Supabase realtime configuration,
+                      subscription lifecycle, and client-side listeners
+                      until database events were correctly reflected in
+                      application state.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#07B6D5]">
+                      Result
+                    </p>
+
+                    <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                      Notifications and relevant data changes could update
+                      the interface without requiring unnecessary manual
+                      refreshes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Challenge 06 */}
+            <div className="relative border-y border-slate-200 py-14">
+              <div className="grid gap-10 lg:grid-cols-[0.35fr_1fr]">
+                <div>
+                  <span className="font-mono text-sm text-[#07B6D5]">
+                    06
+                  </span>
+
+                  <h3 className="mt-4 max-w-xs text-xl font-semibold tracking-tight text-[#08111F]">
+                    User Data Persistence &amp; Ownership
+                  </h3>
+                </div>
+
+                <div className="grid gap-8 sm:grid-cols-3">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">
+                      Challenge
+                    </p>
+
+                    <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                      User-specific information needed to persist reliably
+                      across sessions while ensuring profile, journal,
+                      trade, and notification data remained associated with
+                      the correct account.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">
+                      Solution
+                    </p>
+
+                    <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                      Connected authenticated user IDs to persisted records,
+                      corrected data-fetching and state-management flows,
+                      and verified ownership across the application's
+                      major user workflows.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#07B6D5]">
+                      Result
+                    </p>
+
+                    <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                      User data persisted across sessions and remained
+                      correctly associated with the authenticated trader.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Architecture Note */}
-          <div className="mt-20 border-t border-slate-200 pt-8">
-            <p className="max-w-3xl text-sm leading-relaxed text-slate-500">
-              The architecture keeps the presentation layer, data services,
-              authentication, and AI workflows connected while maintaining
-              account-level data isolation through Supabase Row Level Security.
+          {/* Closing Note */}
+          <div className="mt-16 max-w-3xl">
+            <p className="text-sm leading-relaxed text-slate-500">
+              These challenges shaped the final architecture of Pipsoul,
+              turning individual debugging problems into more reliable
+              authentication, data handling, security, realtime behavior,
+              and AI-driven workflows.
             </p>
           </div>
         </div>
