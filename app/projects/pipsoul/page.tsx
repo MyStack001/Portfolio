@@ -181,7 +181,13 @@ export default function PipsoulCaseStudy() {
       </section>
 
       {/* Key Features */}
-<section className="border-t border-slate-200 bg-white">
+<section
+  className="border-t border-white/10 text-white"
+  style={{
+    background:
+      "radial-gradient(circle at top right, rgba(7, 182, 213, 0.10), transparent 35%), linear-gradient(135deg, #08111F 0%, #0A1728 50%, #08111F 100%)",
+  }}
+>
   <div className="mx-auto max-w-6xl px-6 py-20">
     {/* Section Intro */}
     <div className="max-w-3xl">
@@ -189,11 +195,11 @@ export default function PipsoulCaseStudy() {
         Key Features
       </span>
 
-      <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900">
+      <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white">
         Built around the complete trading workflow.
       </h2>
 
-      <p className="mt-4 text-base leading-relaxed text-slate-600">
+      <p className="mt-4 text-base leading-relaxed text-slate-400">
         Pipsoul combines structured trade journaling, performance analytics,
         intelligent insights, and automated feedback into one connected
         trading experience.
@@ -203,18 +209,18 @@ export default function PipsoulCaseStudy() {
     {/* Feature Grid */}
     <div className="mt-12 grid gap-6 sm:grid-cols-2">
       {/* Trade Journaling */}
-      <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 transition-colors hover:border-[#07B6D5]/30 hover:bg-white/[0.06]">
         <div className="flex items-center justify-between gap-4">
-          <h3 className="text-lg font-semibold text-slate-900">
+          <h3 className="text-lg font-semibold text-white">
             Trade Journaling
           </h3>
 
-          <span className="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[11px] font-medium text-slate-600">
+          <span className="rounded-full border border-white/10 bg-white/[0.05] px-2.5 py-1 text-[11px] font-medium text-slate-400">
             Core
           </span>
         </div>
 
-        <p className="mt-3 text-sm leading-relaxed text-slate-600">
+        <p className="mt-3 text-sm leading-relaxed text-slate-400">
           Traders can record entries, exits, setups, bias, notes, outcomes,
           and other contextual details to build a structured history of
           their trading decisions.
@@ -222,18 +228,18 @@ export default function PipsoulCaseStudy() {
       </div>
 
       {/* Performance Analytics */}
-      <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 transition-colors hover:border-[#07B6D5]/30 hover:bg-white/[0.06]">
         <div className="flex items-center justify-between gap-4">
-          <h3 className="text-lg font-semibold text-slate-900">
+          <h3 className="text-lg font-semibold text-white">
             Performance Analytics
           </h3>
 
-          <span className="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[11px] font-medium text-slate-600">
+          <span className="rounded-full border border-white/10 bg-white/[0.05] px-2.5 py-1 text-[11px] font-medium text-slate-400">
             Analytics
           </span>
         </div>
 
-        <p className="mt-3 text-sm leading-relaxed text-slate-600">
+        <p className="mt-3 text-sm leading-relaxed text-slate-400">
           Performance data is transformed into useful statistics and
           visualizations, helping traders evaluate results and understand
           how their trading is developing over time.
@@ -241,18 +247,18 @@ export default function PipsoulCaseStudy() {
       </div>
 
       {/* Journal Insights */}
-      <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 transition-colors hover:border-[#07B6D5]/30 hover:bg-white/[0.06]">
         <div className="flex items-center justify-between gap-4">
-          <h3 className="text-lg font-semibold text-slate-900">
+          <h3 className="text-lg font-semibold text-white">
             Journal Insights
           </h3>
 
-          <span className="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[11px] font-medium text-slate-600">
+          <span className="rounded-full border border-white/10 bg-white/[0.05] px-2.5 py-1 text-[11px] font-medium text-slate-400">
             Insights
           </span>
         </div>
 
-        <p className="mt-3 text-sm leading-relaxed text-slate-600">
+        <p className="mt-3 text-sm leading-relaxed text-slate-400">
           Journal data can be examined alongside trading outcomes to surface
           recurring behaviors, patterns, and observations that can support
           better decision-making.
@@ -260,38 +266,38 @@ export default function PipsoulCaseStudy() {
       </div>
 
       {/* Pipsoul AI */}
-      <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-        <div className="flex items-center justify-between gap-4">
-          <h3 className="text-lg font-semibold text-slate-900">
-            Pipsoul AI
-          </h3>
+<div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 transition-colors hover:border-[#07B6D5]/30 hover:bg-white/[0.06]">
+  <div className="flex items-center justify-between gap-4">
+    <h3 className="text-lg font-semibold text-white">
+      Pipsoul AI
+    </h3>
 
-          <span className="rounded-full border border-sky-200 bg-sky-50 px-2.5 py-1 text-[11px] font-semibold text-sky-700">
-            AI-Powered
-          </span>
-        </div>
+    <span className="rounded-full border border-[#07B6D5]/20 bg-[#07B6D5]/10 px-2.5 py-1 text-[11px] font-semibold text-[#07B6D5]">
+      AI-Powered
+    </span>
+  </div>
 
-        <p className="mt-3 text-sm leading-relaxed text-slate-600">
-          Pipsoul AI analyzes a trader&apos;s journal context and recorded
-          performance to generate contextual feedback, identify recurring
-          behaviors, and help traders turn their trading history into
-          actionable insights.
-        </p>
-      </div>
+  <p className="mt-3 text-sm leading-relaxed text-slate-400">
+    Pipsoul AI analyzes a trader&apos;s journal context and recorded
+    performance to generate contextual feedback, identify recurring
+    behaviors, and help traders turn their trading history into
+    actionable insights.
+  </p>
+</div>
 
       {/* Notifications & Automation */}
-      <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 transition-colors hover:border-[#07B6D5]/30 hover:bg-white/[0.06]">
         <div className="flex items-center justify-between gap-4">
-          <h3 className="text-lg font-semibold text-slate-900">
+          <h3 className="text-lg font-semibold text-white">
             Notifications & Automation
           </h3>
 
-          <span className="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[11px] font-medium text-slate-600">
+          <span className="rounded-full border border-white/10 bg-white/[0.05] px-2.5 py-1 text-[11px] font-medium text-slate-400">
             Automation
           </span>
         </div>
 
-        <p className="mt-3 text-sm leading-relaxed text-slate-600">
+        <p className="mt-3 text-sm leading-relaxed text-slate-400">
           Automated notifications keep traders informed about important
           activity and events without requiring them to constantly monitor
           the application.
@@ -299,18 +305,18 @@ export default function PipsoulCaseStudy() {
       </div>
 
       {/* Achievements & Streaks */}
-      <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 transition-colors hover:border-[#07B6D5]/30 hover:bg-white/[0.06]">
         <div className="flex items-center justify-between gap-4">
-          <h3 className="text-lg font-semibold text-slate-900">
+          <h3 className="text-lg font-semibold text-white">
             Achievements & Streaks
           </h3>
 
-          <span className="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[11px] font-medium text-slate-600">
+          <span className="rounded-full border border-white/10 bg-white/[0.05] px-2.5 py-1 text-[11px] font-medium text-slate-400">
             Engagement
           </span>
         </div>
 
-        <p className="mt-3 text-sm leading-relaxed text-slate-600">
+        <p className="mt-3 text-sm leading-relaxed text-slate-400">
           Journaling milestones and consistency streaks encourage traders
           to maintain disciplined habits and continuously document their
           trading activity.
@@ -318,18 +324,18 @@ export default function PipsoulCaseStudy() {
       </div>
 
       {/* Authentication & Data Isolation */}
-      <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 transition-colors hover:border-[#07B6D5]/30 hover:bg-white/[0.06]">
         <div className="flex items-center justify-between gap-4">
-          <h3 className="text-lg font-semibold text-slate-900">
+          <h3 className="text-lg font-semibold text-white">
             Authentication & Data Isolation
           </h3>
 
-          <span className="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[11px] font-medium text-slate-600">
+          <span className="rounded-full border border-white/10 bg-white/[0.05] px-2.5 py-1 text-[11px] font-medium text-slate-400">
             Security
           </span>
         </div>
 
-        <p className="mt-3 text-sm leading-relaxed text-slate-600">
+        <p className="mt-3 text-sm leading-relaxed text-slate-400">
           Supabase authentication and row-level security provide account
           isolation, ensuring each trader&apos;s journals, trades, analytics,
           and personal data remain associated with the correct user.
@@ -681,7 +687,13 @@ export default function PipsoulCaseStudy() {
      </section>
 
       {/* Technical Architecture */}
-<section className="border-t border-white/10 bg-[#08111F] text-white">
+<section
+  className="border-t border-white/10 text-white"
+  style={{
+    background:
+      "radial-gradient(circle at top right, rgba(7, 182, 213, 0.10), transparent 35%), linear-gradient(135deg, #08111F 0%, #0A1728 50%, #08111F 100%)",
+  }}
+>
   <div className="mx-auto max-w-6xl px-6 py-24">
     {/* Section Intro */}
     <div className="max-w-3xl">
@@ -726,9 +738,9 @@ export default function PipsoulCaseStudy() {
           <div className="relative flex flex-col items-center text-center">
             <div className="hidden h-10 w-px bg-white/15 lg:block" />
 
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
-              01
-            </p>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#07B6D5]">
+  01
+</p>
 
             <h3 className="mt-2 text-xl font-semibold text-white">
               Frontend
@@ -748,9 +760,9 @@ export default function PipsoulCaseStudy() {
           <div className="relative flex flex-col items-center text-center">
             <div className="hidden h-10 w-px bg-white/15 lg:block" />
 
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
-              02
-            </p>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#07B6D5]">
+  02
+</p>
 
             <h3 className="mt-2 text-xl font-semibold text-white">
               Backend &amp; Data
@@ -769,9 +781,9 @@ export default function PipsoulCaseStudy() {
           <div className="relative flex flex-col items-center text-center">
             <div className="hidden h-10 w-px bg-white/15 lg:block" />
 
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
-              03
-            </p>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#07B6D5]">
+  03
+</p>
 
             <h3 className="mt-2 text-xl font-semibold text-white">
               AI &amp; Automation
