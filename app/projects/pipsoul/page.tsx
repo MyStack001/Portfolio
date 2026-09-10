@@ -455,61 +455,83 @@ export default function PipsoulCaseStudy() {
             </div>
 
             {/* Typography */}
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
-                  02
-                </p>
+<div className="rounded-3xl border border-slate-200 bg-slate-50 p-8">
+  <div>
+    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
+      02
+    </p>
 
-                <h3 className="mt-2 text-2xl font-semibold text-[#08111F]">
-                  Typography
-                </h3>
-              </div>
+    <h3 className="mt-2 text-2xl font-semibold text-[#08111F]">
+      Typography
+    </h3>
+  </div>
 
-              <div className="mt-10">
-                <div className="border-b border-slate-200 pb-8">
-                  <p className="text-xs uppercase tracking-[0.16em] text-slate-400">
-                    Display
-                  </p>
+  <div className="mt-10">
+    {/* Typeface */}
+    <div className="border-b border-slate-200 pb-8">
+      <p className="text-xs uppercase tracking-[0.16em] text-slate-400">
+        Typeface
+      </p>
 
-                  <p className="mt-5 text-5xl font-semibold tracking-tight text-[#08111F]">
-                    Pipsoul
-                  </p>
+      <p className="mt-5 text-5xl font-semibold tracking-tight text-[#08111F]">
+        Inter
+      </p>
 
-                  <p className="mt-3 text-sm text-slate-500">
-                    Strong hierarchy for headings and key moments.
-                  </p>
-                </div>
+      <p className="mt-3 text-sm text-slate-500">
+        Used across the product for clear hierarchy, readable data, and
+        consistent interface communication.
+      </p>
+    </div>
 
-                <div className="border-b border-slate-200 py-8">
-                  <p className="text-xs uppercase tracking-[0.16em] text-slate-400">
-                    Body
-                  </p>
+    {/* Body */}
+    <div className="border-b border-slate-200 py-8">
+      <p className="text-xs uppercase tracking-[0.16em] text-slate-400">
+        Body
+      </p>
 
-                  <p className="mt-4 max-w-md text-lg leading-relaxed text-slate-600">
-                    Clear, readable typography keeps trading information
-                    easy to scan.
-                  </p>
-                </div>
+      <p className="mt-4 max-w-md text-lg leading-relaxed text-slate-600">
+        Clear typography keeps trade details, journal entries, and AI
+        insights easy to scan.
+      </p>
+    </div>
 
-                <div className="pt-8">
-                  <p className="text-xs uppercase tracking-[0.16em] text-slate-400">
-                    Metrics
-                  </p>
+    {/* Trading Data */}
+    <div className="pt-8">
+      <p className="text-xs uppercase tracking-[0.16em] text-slate-400">
+        Trading Data
+      </p>
 
-                  <div className="mt-4 flex flex-wrap items-end gap-4">
-                    <span className="text-5xl font-semibold tracking-tight text-[#08111F]">
-                      $2,450
-                    </span>
-
-                    <span className="mb-2 rounded-full bg-green-50 px-3 py-1 text-xs font-semibold text-[#22C55E]">
-                      +12.4%
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div className="mt-4 space-y-3">
+        <div className="flex items-center justify-between rounded-xl border border-slate-200 bg-white px-4 py-3">
+          <div>
+            <p className="text-sm font-medium text-[#08111F]">
+              GBPUSD · BUY
+            </p>
+            <p className="mt-1 text-xs text-slate-500">
+              London Session
+            </p>
           </div>
+
+          <span className="text-sm font-semibold text-[#22C55E]">
+            +2.4R
+          </span>
+        </div>
+
+        <div className="rounded-xl border border-slate-200 bg-white px-4 py-3">
+          <p className="text-sm font-medium text-[#08111F]">
+            AI Insight
+          </p>
+
+          <p className="mt-1 text-xs leading-relaxed text-slate-500">
+            Strong execution, but entries show a recurring tendency to
+            chase momentum.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
           {/* Visual Language */}
           <div className="mt-6 rounded-3xl border border-slate-200 bg-slate-50 p-8 sm:p-10">
